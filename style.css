@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e0ffff;
+  overflow-x: hidden;
+}
+
+h1 {
+  padding: 2rem 0 0 2rem;
+  font: 700 1.875rem "Comic Sans", sans-serife;
+  color: black;
+  -webkit-font-smoothing: auto;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1 rem;
+  margin-left: 2 rem;
+}
+
+.primeiro {
+  background: #ffffff;
+  width: 1200px;
+  height: 400px;
+  margin: 4rem auto;
+  padding: 60px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.primeiro img {
+  width: 30%;
+}
+
+.primeiro p {
+  padding-left: 1.5rem;
+}
