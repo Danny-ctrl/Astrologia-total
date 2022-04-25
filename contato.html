@@ -11,7 +11,7 @@
 <body>
   <header>
     <div class="caixa">
-      <h1><img src="img/Logo-Astrologia-Total.jpeg" /></h1>
+      <h1><img src="img/Logo-Astrologia-Total.jpeg" alt="logo do site" /></h1>
       <nav>
         <ul>
           <li><a href="Index.html">Home</a></li>
@@ -24,19 +24,43 @@
   <main>
     <form>
       <label for="nomecompleto">Nome completo</label>
-      <input type="text" id="nomecompleto">
+      <input type="text" id="nomecompleto" class="input-padrao" required>
       <label for="email">Email</label>
-      <input type="text" id="email">
+      <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
       <label for="telefone">Telefone</label>
-      <input type="text" id="telefone">
+      <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+      <label for="mensagem">Mensagem</label>
+      <textarea cols="68" rows="10" id="mensagem" class="input-padrao" required></textarea>
 
-      <input type="submit" value="Enviar formulário">
+      <div>
+        <p>Como prefere o nosso contato?</p>
+
+        <label for="radio-email"> <input type="radio" name="contato" value="email" id="radio-email">Email</label>
+
+        <label for="radio-telefone"> <input type="radio" name="contato" value="telefone"
+            id="radio-telefone">Telefone</label>
+
+        <label for="radio-whatsapp"> <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"
+            checked>Whatsapp</label>
+
+      </div>
+
+      <div>
+        <p>Em qual horário prefere atendimento?</p>
+        <select>
+          <option>Manhã</option>
+          <option>Tarde</option>
+          <option>Noite</option>
+        </select>
+      </div>
+      <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+      <input type="submit" value="Enviar formulário" class="enviar">
 
     </form>
 
   </main>
   <footer>
-    <img src="/img/Logo-Astrologia-Total.jpeg">
+    <img src="/img/Logo-Astrologia-Total.jpeg" alt="logo do site">
     <p class="copyright">&copy; Copyright Astrologia Total - 2022</p>
     <p class="dev">Desenvolvido por DRomes</p>
   </footer>
