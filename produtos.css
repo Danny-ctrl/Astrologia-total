@@ -1,5 +1,5 @@
 header {
-  background: #e0ffff;
+  background: white;
   padding: 20px 0;
 
 }
@@ -16,6 +16,10 @@ header {
   height: 80px;
 }
 
+/*body {
+  background: #2E2E2E;
+}
+*/
 nav {
   position: absolute;
   top: 0px;
@@ -27,12 +31,13 @@ nav li {
   margin: 0 0 0 15px;
   position: relative;
   top: 0px;
+  color: white;
 
 }
 
 nav a {
   text-transform: uppercase;
-  color: #000000;
+  color: black;
   font-weight: bold;
   font-size: 22px;
   text-decoration: none;
@@ -40,7 +45,8 @@ nav a {
 }
 
 nav a:hover {
-  color: aqua;
+  color: #C79845;
+  ;
   text-decoration: underline;
 }
 
@@ -64,11 +70,11 @@ nav a:hover {
 }
 
 .produtos li:hover {
-  border-color: aqua;
+  border-color: #C79845;
 }
 
 .produtos li:active {
-  border-color: #c78c19;
+  border-color: #FFD700;
 }
 
 .produtos li:hover h2 {
@@ -109,6 +115,7 @@ footer img {
 
 .dev {
   font-size: 13px;
+  color: #FFD700;
 }
 
 main {
@@ -142,7 +149,7 @@ form p {
 .enviar {
   width: 40%;
   padding: 15px 0;
-  background: #e0ffff;
+  background: #C79845;
   color: black;
   font-weight: bold;
   font-size: 18px;
@@ -153,6 +160,6 @@ form p {
 }
 
 .enviar:hover {
-  background: darkblue;
+  background: #FFD700;
   transform: scale(1.2);
 }

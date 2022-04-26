@@ -5,8 +5,10 @@
 }
 
 body {
-  background: #e0ffff;
+  background: url("/img/mandala1.jpeg");
   overflow-x: hidden;
+  opacity: 0.7;
+
 }
 
 h1 {
@@ -22,8 +24,8 @@ h2 {
   margin-left: 2 rem;
 }
 
-.primeiro {
-  background: #ffffff;
+/*.primeiro {
+  position: absolute;
   width: 1200px;
   height: 400px;
   margin: 4rem auto;
@@ -32,10 +34,10 @@ h2 {
   align-items: flex-start;
   justify-content: center;
 }
-
 .primeiro img {
   width: 30%;
 }
+*/
 
 .primeiro p {
   padding-left: 1.5rem;
