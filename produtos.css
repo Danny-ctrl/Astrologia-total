@@ -1,6 +1,8 @@
 header {
   background: white;
   padding: 20px 0;
+  height: 100px;
+  opacity: 0.8;
 
 }
 
@@ -16,14 +18,15 @@ header {
   height: 80px;
 }
 
-/*body {
+body {
   background: #2E2E2E;
 }
-*/
+
 nav {
   position: absolute;
   top: 0px;
   right: 0;
+
 }
 
 nav li {
@@ -49,6 +52,8 @@ nav a:hover {
   ;
   text-decoration: underline;
 }
+
+
 
 .produtos {
   width: 940px;

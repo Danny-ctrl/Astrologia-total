@@ -5,11 +5,10 @@
 }
 
 body {
-  background: url("/img/mandala1.jpeg");
   overflow-x: hidden;
-  opacity: 0.7;
-
+  font-family: 'Montserrat', sans-serif;
 }
+
 
 h1 {
   padding: 2rem 0 0 2rem;
@@ -34,11 +33,50 @@ h2 {
   align-items: flex-start;
   justify-content: center;
 }
+
 .primeiro img {
   width: 30%;
-}
-*/
+  
+}*/
+
 
 .primeiro p {
   padding-left: 1.5rem;
+}
+
+.primeira {
+  width: 100%;
+}
+
+.astro {
+  text-align: center;
+  font-size: 2em;
+  margin: 0 0 1em;
+
+}
+
+.principal p {
+  color: #C79845;
+  margin: 0 0 1em;
+  font-weight: bold;
+  font-style: italic;
+  padding: 2rem 0 0 2rem;
+
+}
+
+.imagem-animada {
+  width: 250px;
+  float: left;
+  margin: 0 20px 20px 0;
+
+}
+
+.imagem-animada:hover {
+  transform: rotate(40deg);
+  transition: 1s;
+}
+
+.cartas {
+  width: 60%;
+  ;
 }
