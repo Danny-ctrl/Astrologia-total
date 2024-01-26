@@ -32,7 +32,16 @@ footer {
   font-size: 13px;
   margin: 20px 0 0;
 }
-
+.social-grid {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.social-grid span {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
 @media screen and (max-width: 480px) {
   header,
   .caixa,
