@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+.h1 {
+  padding: 2rem 0 0 2rem;
+  font: 700 1.875rem "Comic Sans", sans-serif;
+  color: black;
+  -webkit-font-smoothing: auto;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+footer {
+  text-align: center;
+  background: url("/img/footer3.jpg");
+  padding: 40px 0;
+}
+
+.copyright {
+  color: white;
+  font-size: 13px;
+  margin: 20px 0 0;
+}
+
+@media screen and (max-width: 480px) {
+  header,
+  .caixa,
+  .principal,
+  .primeira,
+  .cartas {
+    width: auto;
+  }
+}
