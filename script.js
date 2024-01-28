@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
           once: true
         });
       }
-    }, 2000);
+    }, 3000);
 
     // Atualiza o índice para a próxima imagem
     imagemAtualIndex = (imagemAtualIndex + 1) % imagemUrls.length;
