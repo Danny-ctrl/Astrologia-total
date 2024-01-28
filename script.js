@@ -27,24 +27,39 @@ document.addEventListener('DOMContentLoaded', function () {
     novaImagem.src = imagemUrls[imagemAtualIndex];
     novaImagem.alt = 'Imagem #' + (imagemAtualIndex + 1);
 
+    // Define o tamanho inicial e a transição
+    novaImagem.style.transform = 'scale(0)';
+    novaImagem.style.transition = 'transform 2s ease';
+
     // Adiciona nova imagem
     imagensContainer.appendChild(novaImagem);
 
-    // Configura a opacidade inicial para 0
-    novaImagem.style.opacity = 0;
+    // Força um novo layout antes de aplicar a escala
+    novaImagem.offsetWidth;
 
-    // Gradualmente aumenta a opacidade para 1
+    // Aplica a escala para aumentar o tamanho
+    novaImagem.style.transform = 'scale(1)';
+
+    // Remove a imagem anterior após transição
     setTimeout(() => {
-      novaImagem.style.opacity = 1;
-    }, 10);
+      const imagemAnterior = imagensContainer.querySelector('img:not(:last-child)');
+      if (imagemAnterior) {
+        imagemAnterior.style.opacity = 0;
+        imagemAnterior.addEventListener('transitionend', () => {
+          imagensContainer.removeChild(imagemAnterior);
+        }, {
+          once: true
+        });
+      }
+    }, 2000);
 
-    // Incrementa o índice para a próxima imagem
+    // Atualiza o índice para a próxima imagem
     imagemAtualIndex = (imagemAtualIndex + 1) % imagemUrls.length;
-
-    // Configura o próximo timeout para a próxima imagem
-    setTimeout(exibirProximaImagem, intervalo);
   }
 
   // Exibe a primeira imagem imediatamente
   exibirProximaImagem();
+
+  // Configura o intervalo para exibir automaticamente as imagens
+  setInterval(exibirProximaImagem, intervalo);
 });

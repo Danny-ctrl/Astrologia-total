@@ -11,9 +11,15 @@
 
 .primeira {
   width: 100%;
-  z-index: 0;
+  height: 80vh;
+  z-index: 1;
+  position: absolute;
 }
-
+.primeira img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
 .astro {
   text-align: center;
   font-size: 2em;
@@ -36,16 +42,16 @@
   overflow: hidden;
 }
 .imagens-container img {
-  max-width: 60%;
-  max-height: 40%;
+  max-width: 100%;
+  max-height: 45%;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 18%;
+  left: 44%;
   margin: 0 auto;
   transform: translate(-50%, -50%);
   opacity: 1;
   transition: opacity 2s ease;
-  z-index: 1;
+  z-index: 2;
 }
 .imagem-animada {
   width: 250px;
