@@ -9,8 +9,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.h1 {
-  padding: 2rem 0 0 2rem;
+h1 {
   font: 700 1.875rem "Comic Sans", sans-serif;
   color: black;
   -webkit-font-smoothing: auto;
@@ -21,7 +20,7 @@ header {
   justify-content: space-between;
   width: 100%;
 }
-header p::first-letter {
+header h1::first-letter {
   color: #fa0001;
   font-size: 70px;
   font: 500 1.875rem "Montserrat", sans-serif;
@@ -47,9 +46,7 @@ footer {
   color: white;
   font-size: 20px;
 }
-span {
-  text-decoration: none;
-}
+
 @media screen and (max-width: 480px) {
   header,
   .caixa,

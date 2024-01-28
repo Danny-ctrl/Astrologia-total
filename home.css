@@ -5,12 +5,13 @@
   padding-top: 40px;
 }
 
-.primeiro p {
+.primeiro h1 {
   padding-left: 1.5rem;
 }
 
 .primeira {
   width: 100%;
+  z-index: 0;
 }
 
 .astro {
@@ -26,7 +27,26 @@
   font-style: italic;
   padding: 2rem 0 0 2rem;
 }
-
+.imagens-container {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+}
+.imagens-container img {
+  max-width: 60%;
+  max-height: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: opacity 2s ease;
+  z-index: 1;
+}
 .imagem-animada {
   width: 250px;
   float: left;
