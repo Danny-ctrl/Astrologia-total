@@ -18,9 +18,11 @@ header h1::first-letter {
 body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
-  background: #2e2e2e;
+  background: #061528;
 }
-
+main {
+  margin: 0 auto;
+}
 h1 {
   font: 700 1.875rem "Comic Sans", sans-serif;
   color: black;
@@ -33,8 +35,9 @@ main {
 }
 footer {
   text-align: center;
-  background: url("/img/footer3.jpg");
+  // background: url("/img/footer3.jpg");
   padding: 40px 0;
+  background: #082741;
 }
 
 .copyright {
