@@ -15,9 +15,6 @@ header {
   width: 80px;
   height: 80px;
 }
-body {
-  background: #2e2e2e;
-}
 
 nav {
   position: absolute;
@@ -94,9 +91,4 @@ nav a:hover {
 .dev {
   font-size: 13px;
   color: #ffd700;
-}
-
-main {
-  width: 940px;
-  margin: 0 auto;
 }
