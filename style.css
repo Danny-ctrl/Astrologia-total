@@ -12,7 +12,7 @@ header {
 header h1::first-letter {
   color: #fa0001;
   font-size: 70px;
-  font: 500 1.875rem "Montserrat", sans-serif;
+  font: 700 1.875rem "Montserrat", sans-serif;
   font-weight: bold;
 }
 body {
@@ -26,6 +26,7 @@ main {
   height: 100%;
 }
 h1 {
+  margin-left: 1rem;
   font: 700 1.875rem "Comic Sans", sans-serif;
   color: black;
   -webkit-font-smoothing: auto;

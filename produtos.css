@@ -26,12 +26,9 @@ nav li {
   display: inline;
   margin: 0 0 0 15px;
   position: relative;
-  top: 0px;
-  color: white;
 }
 
 nav a {
-  text-transform: uppercase;
   color: black;
   font-weight: bold;
   font-size: 22px;
@@ -91,4 +88,14 @@ nav a:hover {
 .dev {
   font-size: 13px;
   color: #ffd700;
+}
+
+@media screen and (max-width: 480px) {
+  .produtos {
+    flex-direction: column;
+  }
+  .produtos li {
+    width: 90%;
+    margin: 0 0 30px;
+  }
 }
